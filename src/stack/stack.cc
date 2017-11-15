@@ -4,7 +4,7 @@
 // TODO: Implementation of print for SValue
 void print(SValue)
 {
-    cout << "The Svalue is: " << Svalue << endl;
+    std::cout << Svalue << std::endl;
 }
 
 // Implementation of default constructor
@@ -103,10 +103,12 @@ bool Stack::empty() const
 // TODO: Implementation of print method
 void Stack::print() const
 {
-    SValue val;
+    SValue val = this->head; //wondering if = also allows cal to
+    //inheret the pointers or if needs to be manually allocated
     while (!(this->empty())){
-        val = this->pop();
+        //val = this->pop();
         std::cout << val << "/t";
+        val = val->next;
     }
 }
 
