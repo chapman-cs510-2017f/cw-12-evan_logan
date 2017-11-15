@@ -72,7 +72,7 @@ void Stack::push(SValue val)
 
 
 // Implementation of pop method
-SValue Stack::pop() 
+SValue Stack::pop()
 {
     // Use the empty method to check whether Stack is empty
     if (this->empty())
@@ -94,12 +94,37 @@ SValue Stack::pop()
 // TODO: Implementation of empty method
 bool Stack::empty() const
 {
-
+    if (this->head->data == null)
+        return true;
+    return false;
 }
 
 
 // TODO: Implementation of print method
-void Stack::print()
+void Stack::print() const
 {
-
+    SValue val;
+    while (!(this->empty()){
+        val = this->pop();
+        cout << val << "/t";
+    }
+    << endl;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
