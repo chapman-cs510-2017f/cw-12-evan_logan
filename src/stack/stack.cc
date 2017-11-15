@@ -104,11 +104,10 @@ bool Stack::empty() const
 void Stack::print() const
 {
     SValue val;
-    while (!(this->empty()){
+    while (!(this->empty())){
         val = this->pop();
-        cout << val << "/t";
+        std::cout << val << "/t";
     }
-    << endl;
 }
 
 
