@@ -9,7 +9,7 @@ int main(void)
     Vec3 v = Vec3();
     Vec3 vprime = Vec3();
     Vec2 w = Vec2();
-    
+
     cout << "-----Pass by value test-----" << endl;
     cout << "Original 3 vector:" << endl;
     print_vec(v);
@@ -18,7 +18,7 @@ int main(void)
     print_vec(v);
     cout << "New 3 vector after modification:" << endl;
     print_vec(vprime);
-    
+
     cout << "-----Pass by reference test-----" << endl;
     cout << "Original 2 vector:" << endl;
     print_vec(w);

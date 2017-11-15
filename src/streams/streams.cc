@@ -40,9 +40,9 @@ int main(int argc, char **argv)
     // NOTE: This is forbidden the Google style guide, but is included here
     //       for completeness - generally don't do this to keep namespaces clear
     using namespace std;
-    
+
     // Example of command line usage
-    if ( argc != 2 ) 
+    if ( argc != 2 )
     {
         // The stream operator << automatically converts types
         // so here the C-string (char *) of argv[0] is converted to a 
@@ -107,7 +107,7 @@ int main(int argc, char **argv)
         // (the file is also closed automatically when the program terminates)
         output_file.close();
     }
-    
+
     // (this is implicit if omitted)
     return 0;
 }
