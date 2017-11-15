@@ -2,7 +2,10 @@
 #include "stack.h"
 
 // TODO: Implementation of print for SValue
-// void print(SValue) {}
+void print(SValue)
+{
+    cout << "The Svalue is: " << Svalue << endl;
+}
 
 // Implementation of default constructor
 Stack::Stack()
@@ -89,8 +92,14 @@ SValue Stack::pop()
 
 
 // TODO: Implementation of empty method
-// bool Stack::empty() const {}
+bool Stack::empty() const
+{
+
+}
 
 
 // TODO: Implementation of print method
-// void Stack::print() {}
+void Stack::print()
+{
+
+}
