@@ -2,9 +2,9 @@
 #include "stack.h"
 
 // TODO: Implementation of print for SValue
-void print(SValue)
+void print(SValue val)
 {
-    std::cout << Svalue << std::endl;
+    std::cout << val << std::endl;
 }
 
 // Implementation of default constructor
