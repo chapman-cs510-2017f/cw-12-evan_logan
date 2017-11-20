@@ -2,7 +2,7 @@
 #include "../src/stack/stack.h"
 
 int main(void) {
-    Stack s = Stack();
+    Stack s;
     SValue val;
 
     std::cout << "Putting items on the stack: 1,2,3" << std::endl;
@@ -27,6 +27,6 @@ int main(void) {
     s.push(5);
     s.push(6);
     std::cout << "Printing the stack:" << std::endl;
-    //s.print();
+    s.print();
     return 0;
 }

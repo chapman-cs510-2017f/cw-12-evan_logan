@@ -4,7 +4,7 @@
 // TODO: Implementation of print for SValue
 void print(SValue val)
 {
-    std::cout << val << std::endl;
+    std::cout << val;
 }
 
 // Implementation of default constructor
@@ -91,7 +91,6 @@ SValue Stack::pop()
 }
 
 
-// TODO: Implementation of empty method
 bool Stack::empty() const
 {
     if (this->head == nullptr)
@@ -100,15 +99,18 @@ bool Stack::empty() const
 }
 
 
-// TODO: Implementation of print method
 void Stack::print() const
 {
-    SValue val = this->head; //wondering if = also allows cal to
-    //inheret the pointers or if needs to be manually allocated
-    while (!(this->empty())){
-        //val = this->pop();
-        std::cout << val << "/t";
-        val = val->next;
+    if (this->empty()){
+        return;
+    }
+
+    Node *node = (this->head).get();
+
+    std::cout << node->data << std::endl;
+    while (node->next != nullptr) {
+        node = (node->next).get();
+        std::cout << node->data << std::endl;
     }
 }
 
